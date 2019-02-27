@@ -294,6 +294,14 @@ iframe {
   width: 100%;
 }
 
+.article-side {
+  display: none;
+  float: right;
+  width: 20%;
+  height: 100px;
+  border: 1px solid black;
+}
+
 /* more section css */
 #more {
   display: none;
