@@ -132,7 +132,70 @@ table {
 #header {
   display: flex;
   justify-content: space-between;
-  margin: 10px 10px 0 10px;
+  margin: 10px 10px 0 0px;
   padding-left: 30px;
   padding-right: 30px;
+  box-shadow: 0 4px 2px -2px gray;
+  padding-bottom: 5px;
+}
+
+#middle{
+ 
+}
+
+#middle img{
+  height:27px;
+  width:195px;
+}
+
+.header-btn{
+  background-color: #6288a5;
+    border: 1px solid #326891;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius:4px;
+    font-family: 'Libre Franklin', sans-serif;
+    height: 32px;
+}
+
+#left{
+  line-height: 40px;
+}
+
+#left a{
+  text-decoration: none;
+  color:black;
+  font-size: 14.25px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+.fa-bars{
+padding-right: 20px;
+}
+
+.fa-search{
+  padding-right: 20px;
+}
+
+#hero-img{
+  width: 80%;
+}
+
+#article-title{
+  display: block;
+  max-width: 346.152px;
+  color: #121212;
+  font-size:20px;
+  margin: 0 auto;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+figcaption{
+  width: 100%;
 }
