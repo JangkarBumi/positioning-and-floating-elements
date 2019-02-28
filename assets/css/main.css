@@ -391,24 +391,22 @@ iframe {
 /* side bar */
 #side-bar {
   position: absolute;
-  width: 200px;
+  width: 180px;
   top: 920px;
   right: 40px;
-  border: 1px solid black;
   padding: 10px 5px 10px 5px;
   overflow-wrap: break-word;
-  overflow-block: inherit;
 }
 
 .side-bar-section {
   width: 100%;
-  min-height: 400px;
-  border: 1px solid magenta;
+  min-height: 200px;
   font-family: 'Work Sans', sans-serif;
   font-weight: bold;
+  margin-top: 70%;
 }
 
-.side-bar-section p {
+#editor-picks p {
   display: block;
   padding-bottom: 5px;
   margin-bottom: 10px;
@@ -425,7 +423,34 @@ iframe {
   padding-bottom: 5px;
 }
 
+#signupletter * {
+  padding: 5px 0 5px 0;
+}
 
+#signupletter p:first-child {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+#signupletter p:nth-child(2) {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+
+#sign-up-button {
+  background-color: rgb(98, 136, 165);
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Libre Franklin", sans-serif;
+  height: 35.5px;
+  width: 100%;
+  border-width: 1px solid rgb(98, 136, 165);
+  border-radius: 5px;
+}
 
 
 /* more section css */
