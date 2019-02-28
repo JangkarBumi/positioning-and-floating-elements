@@ -194,7 +194,6 @@ article {
   width: 70%;
   display: block;
   margin: 0 auto;
-  height: 800px;
 }
 
 #hero-img {
@@ -322,7 +321,7 @@ iframe {
 
 /* more section css */
 #more {
-  display: none;
+  display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 80%;
@@ -354,9 +353,9 @@ iframe {
 
 /* footer css */
 footer {
-  display: none;
+  display: grid;
   grid-template-columns: repeat(6, 1fr);
   list-style: none;
   text-decoration: none;
-  border-bottom: 20px solid tomato;
 }
+
