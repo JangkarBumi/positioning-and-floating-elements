@@ -132,15 +132,22 @@ a {
 
 /* Header CSS */
 
+
 #header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top:0;
   display: flex;
-  height: 36px;
+  height: 50px;
   justify-content: space-between;
-  margin: 10px 10px 0 0px;
+  padding: 10px 10px 0 20px;
   padding-left: 10px;
   padding-right: 10px;
   box-shadow: 0 4px 2px -2px gray;
   padding-bottom: 5px;
+  z-index: 999;
+  background-color:white;
 }
 
 #middle img {
@@ -202,6 +209,7 @@ article {
 }
 
 #article-title {
+  z-index: -500;
   display: block;
   width: 390px;
   color: #121212;
@@ -214,6 +222,7 @@ article {
   font-style: italic;
   position: relative;
   left: 100px;
+  padding-top: 70px;
 }
 
 img {
@@ -303,8 +312,9 @@ iframe {
 #graphs-container {
   display: grid;
   margin-bottom: 20px;
-  gap: 5px;
+  gap: 10px;
   grid-template: repeat(2, 370px) / repeat(4, 1fr);
+  padding-bottom: 50px;
 }
 
 .graph-text-header {
@@ -371,10 +381,13 @@ iframe {
   border-color: rgb(50, 104, 145);
   border-image: initial;
   border-radius: 4px;
+margin-bottom: 40px;
 }
 
 .social-media-icons-bottom {
-  clear: both;
+position: relative;
+left: 500px;
+bottom:20px;
 }
 
 /* more section css */
