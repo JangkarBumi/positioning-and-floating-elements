@@ -144,7 +144,7 @@ a {
 }
 
 #middle img {
-  margin-top:7px;
+  margin-top: 7px;
   height: 27px;
   width: 195px;
   color: black;
@@ -304,11 +304,10 @@ iframe {
   display: grid;
   margin-bottom: 20px;
   gap: 5px;
-  grid-template: repeat(2,370px) / repeat(4,1fr);
-
+  grid-template: repeat(2, 370px) / repeat(4, 1fr);
 }
 
-.graph-text-header{
+.graph-text-header {
   font-family: "Libre Franklin", sans-serif;
   line-height: 0px;
   color: rgb(51, 51, 51);
@@ -316,16 +315,33 @@ iframe {
   font-weight: bold;
 }
 
-.graph-text{
+.graph-text {
   display: inline-block;
   margin-top: 10px;
   font-family: "Libre Franklin", sans-serif;
   color: rgb(51, 51, 51);
 }
 
-
 .graph {
   margin: 20px 0px 0px;
+}
+
+.media-footnote {
+  color: rgb(102, 102, 102);
+  font-family: nyt-imperial, georgia, "times new roman", times, serif;
+  font-size: 0.87rem;
+  line-height: 1.125rem;
+  margin: 5px 7px 5px 0px;
+}
+
+.media-footnote span {
+  display: inline-block;
+  color: rgb(136, 136, 136);
+  margin-top: 2px;
+  font-family: nyt-imperial, georgia, "times new roman", times, serif;
+  line-height: 1.125rem;
+  letter-spacing: 0.01em;
+  font-size: 0.75rem;
 }
 
 .article-side {
@@ -336,11 +352,36 @@ iframe {
   border: 1px solid black;
 }
 
+#article-closing-bar {
+  margin: 30px 0 30px 0;
+}
+
+#read-comments-button {
+  float: left;
+  background-color: rgb(98, 136, 165);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Libre Franklin", sans-serif;
+  height: 35.5px;
+  width: 360px;
+  padding-top: 7px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(50, 104, 145);
+  border-image: initial;
+  border-radius: 4px;
+}
+
+.social-media-icons-bottom {
+  clear: both;
+}
+
 /* more section css */
-#more-container{
+#more-container {
   display: flex;
   margin: 0 auto;
-  margin-top:50px;
+  margin-top: 50px;
   width: 90%;
 }
 
@@ -354,15 +395,15 @@ iframe {
   padding-right: 30px;
 }
 
-#more-h2{
+#more-h2 {
   display: none;
   position: relative;
   left: 215px;
   font-size: 1rem;
-    font-weight: 700;
-    font-family: 'Domine', serif;
-    color: #000;
-    padding: 15px;
+  font-weight: 700;
+  font-family: "Domine", serif;
+  color: #000;
+  padding: 15px;
 }
 
 .more-img {
@@ -384,37 +425,36 @@ iframe {
 .more-date {
   color: #999;
   font-size: 12px;
-  font-family: 'Domine', serif;
-  padding-top:20px;
+  font-family: "Domine", serif;
+  padding-top: 20px;
 }
 .more-title {
-  padding-top:20px;
+  padding-top: 20px;
   font-size: 18px;
-  font-family: 'Domine', serif;
-  line-height: 22p
+  font-family: "Domine", serif;
+  line-height: 22p;
 }
 
-#most-popular{
+#most-popular {
   border-top: 1px solid #000;
   width: 310px;
 }
 
-#most-popular h2{
+#most-popular h2 {
   font-size: 1rem;
-    font-weight: 700;
-    font-family: 'Domine', serif;
-    color:#000;
-    padding: 15px;
+  font-weight: 700;
+  font-family: "Domine", serif;
+  color: #000;
+  padding: 15px;
 }
 
-.most-popular-text{
+.most-popular-text {
   border-bottom: 1px solid rgb(226, 226, 226);
-    padding: 15px 0px;
-    font-family: 'Domine', serif;
-    color: rgb(18, 18, 18);
-    font-weight: 500
+  padding: 15px 0px;
+  font-family: "Domine", serif;
+  color: rgb(18, 18, 18);
+  font-weight: 500;
 }
-
 
 /* footer css */
 footer {
@@ -428,11 +468,11 @@ footer {
   padding-top: 20px;
 }
 
-.footer-section h3{
+.footer-section h3 {
   color: rgb(51, 51, 51);
   font-size: 13px;
   font-weight: 700;
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
   height: 25px;
   line-height: 15px;
   text-transform: uppercase;
@@ -440,10 +480,10 @@ footer {
   margin: 0px;
 }
 
-.footer-section ul li a{
+.footer-section ul li a {
   color: rgb(0, 0, 0);
   display: inline-block;
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
   text-transform: capitalize;
   width: 150px;
   font-size: 14px;
@@ -453,7 +493,7 @@ footer {
   text-decoration: none;
 }
 
-#footer-line{
+#footer-line {
   content: "";
   display: block;
   height: 1px;
@@ -462,16 +502,15 @@ footer {
   border-top: 2px solid rgb(226, 226, 226);
 }
 
-
-#footer-nav ul{
+#footer-nav ul {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
 }
 
-#footer-nav ul a{
+#footer-nav ul a {
   color: rgb(153, 153, 153);
   font-size: 12px;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
