@@ -320,11 +320,32 @@ iframe {
 }
 
 /* more section css */
+#more-container{
+  display: flex;
+  margin: 0 auto;
+  margin-top:50px;
+  width: 90%;
+}
+
 #more {
+  border-top: 1px solid #000;
+  padding-top: 50px;
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 80%;
+  grid-gap: 20px;
+  padding-right: 30px;
+}
+
+#more-h2{
+  display: none;
+  position: relative;
+  left: 215px;
+  font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Domine', serif;
+    color: #000;
+    padding: 15px;
 }
 
 .more-img {
@@ -340,16 +361,43 @@ iframe {
 .more-caption {
   text-align: right;
   color: rgb(153, 153, 153);
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .more-date {
   color: #999;
-  font-size: 14px;
+  font-size: 12px;
+  font-family: 'Domine', serif;
+  padding-top:20px;
 }
 .more-title {
+  padding-top:20px;
   font-size: 18px;
+  font-family: 'Domine', serif;
+  line-height: 22p
 }
+
+#most-popular{
+  border-top: 1px solid #000;
+  width: 310px;
+}
+
+#most-popular h2{
+  font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Domine', serif;
+    color:#000;
+    padding: 15px;
+}
+
+.most-popular-text{
+  border-bottom: 1px solid rgb(226, 226, 226);
+    padding: 15px 0px;
+    font-family: 'Domine', serif;
+    color: rgb(18, 18, 18);
+    font-weight: 500
+}
+
 
 /* footer css */
 footer {
@@ -357,5 +405,56 @@ footer {
   grid-template-columns: repeat(6, 1fr);
   list-style: none;
   text-decoration: none;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
+.footer-section h3{
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Domine', serif;
+  height: 25px;
+  line-height: 15px;
+  text-transform: uppercase;
+  width: 150px;
+  margin: 0px;
+}
+
+.footer-section ul li a{
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-family: 'Domine', serif;
+  text-transform: capitalize;
+  width: 150px;
+  font-size: 14px;
+  font-weight: 500;
+  height: 23px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+#footer-line{
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 0px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  border-top: 2px solid rgb(226, 226, 226);
+}
+
+
+#footer-nav ul{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#footer-nav ul a{
+  color: rgb(153, 153, 153);
+  font-size: 12px;
+  padding-bottom:20px;
+}
