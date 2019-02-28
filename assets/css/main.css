@@ -134,10 +134,11 @@ a {
 
 #header {
   display: flex;
+  height: 36px;
   justify-content: space-between;
   margin: 10px 10px 0 0px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   box-shadow: 0 4px 2px -2px gray;
   padding-bottom: 5px;
 }
@@ -145,6 +146,7 @@ a {
 #middle img {
   height: 27px;
   width: 195px;
+  color: black;
 }
 
 .header-btn {
@@ -167,11 +169,15 @@ a {
   color: black;
   font-weight: bolder;
   font-size: 14.25px;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.7px;
   line-height: 19px;
+}
+
+#left a:hover {
+  text-decoration: underline;
 }
 
 .fa-bars {
@@ -292,6 +298,18 @@ figcaption {
 
 iframe {
   width: 100%;
+}
+
+#graph-container {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.graph {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
 }
 
 .article-side {
