@@ -423,6 +423,14 @@ iframe {
   padding-bottom: 5px;
 }
 
+.ad-text {
+  float: right;
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+
 #signupletter * {
   padding: 5px 0 5px 0;
 }
