@@ -144,6 +144,7 @@ a {
 }
 
 #middle img {
+  margin-top:7px;
   height: 27px;
   width: 195px;
   color: black;
@@ -299,16 +300,32 @@ iframe {
   width: 100%;
 }
 
-#graph-container {
+#graphs-container {
   display: grid;
-  grid-gap: 2px;
-  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 20px;
+  gap: 5px;
+  grid-template: repeat(2,370px) / repeat(4,1fr);
+
 }
 
+.graph-text-header{
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 0px;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.graph-text{
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Libre Franklin", sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+
 .graph {
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
+  margin: 20px 0px 0px;
 }
 
 .article-side {
