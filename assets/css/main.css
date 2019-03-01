@@ -90,6 +90,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -104,17 +105,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -122,10 +127,12 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -133,17 +140,24 @@ a {
 /* Header CSS */
 
 #header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
   display: flex;
-  height: 36px;
+  height: 50px;
   justify-content: space-between;
-  margin: 10px 10px 0 0px;
+  padding: 10px 10px 0 20px;
   padding-left: 10px;
   padding-right: 10px;
-  box-shadow: 0 4px 2px -2px gray;
+  box-shadow: 0 1px 1px 0 rgb(205, 205, 205);
   padding-bottom: 5px;
+  z-index: 999;
+  background-color: white;
 }
 
 #middle img {
+  margin-top: 7px;
   height: 27px;
   width: 195px;
   color: black;
@@ -197,10 +211,11 @@ article {
 }
 
 #hero-img {
-  width: 100%;
+  width: 100%
 }
 
 #article-title {
+  z-index: -500;
   display: block;
   width: 390px;
   color: #121212;
@@ -213,6 +228,7 @@ article {
   font-style: italic;
   position: relative;
   left: 100px;
+  padding-top: 70px;
 }
 
 img {
@@ -222,6 +238,7 @@ img {
 figure {
   margin: 0 0 20px 0;
 }
+
 figcaption {
   margin: 4px 0 0 0;
   width: 78%;
@@ -247,6 +264,7 @@ figcaption {
   font-weight: 700;
   padding: 20px 0 20px 0;
 }
+
 #author-name a {
   color: black;
 }
@@ -271,10 +289,11 @@ figcaption {
   margin: auto 0 auto 0;
 }
 
-#social-media-icons {
+.social-media-icons {
   font-size: 22px;
 }
-#social-media-icons a {
+
+.social-media-icons a {
   color: black;
   margin-left: 7px;
 }
@@ -284,9 +303,10 @@ figcaption {
   text-justify: initial;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 19px;
-  line-height: 29px;
+  line-height: 32px;
   margin: 10px 0 10px 0;
 }
+
 .article-header {
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -299,31 +319,153 @@ iframe {
   width: 100%;
 }
 
-#graph-container {
+#graphs-container {
   display: grid;
-  grid-gap: 2px;
-  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 20px;
+  gap: 10px;
+  grid-template: repeat(2, 370px) / repeat(4, 1fr);
+  padding-bottom: 50px;
+}
+
+.graph-text-header {
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 0px;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.graph-text {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Libre Franklin", sans-serif;
+  color: rgb(51, 51, 51);
 }
 
 .graph {
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
+  margin: 20px 0px 0px;
 }
 
-.article-side {
-  display: none;
-  float: right;
-  width: 20%;
-  height: 100px;
-  border: 1px solid black;
+.media-footnote {
+  color: rgb(102, 102, 102);
+  font-family: nyt-imperial, georgia, "times new roman", times, serif;
+  font-size: 0.87rem;
+  line-height: 1.125rem;
+  margin: 5px 7px 5px 0px;
 }
+
+.media-footnote span {
+  display: inline-block;
+  color: rgb(136, 136, 136);
+  margin-top: 2px;
+  font-family: nyt-imperial, georgia, "times new roman", times, serif;
+  line-height: 1.125rem;
+  letter-spacing: 0.01em;
+  font-size: 0.75rem;
+}
+
+
+#article-closing-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  height: 38px;
+}
+
+#read-comments-button {
+  background-color: rgb(98, 136, 165);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif;
+  height: 35.5px;
+  width: 360px;
+  padding-top: 7px;
+  border-width: 1px solid rgb(50, 104, 145);
+}
+
+#article-closing-bar .social-media-icons {
+  margin: auto 0;
+}
+
+/* side bar */
+#side-bar {
+  position: absolute;
+  width: 180px;
+  top: 920px;
+  right: 40px;
+  padding: 10px 5px 10px 5px;
+  overflow-wrap: break-word;
+}
+
+.side-bar-section {
+  width: 100%;
+  min-height: 450px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#editor-picks p {
+  display: block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.side-ad {
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.ad-image {
+  width: 35%;
+  padding-bottom: 5px;
+}
+
+.ad-text {
+  float: right;
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+
+#signupletter * {
+  padding: 5px 0 5px 0;
+}
+
+#signupletter p:first-child {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+#signupletter p:nth-child(2) {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+
+#sign-up-button {
+  background-color: rgb(98, 136, 165);
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Libre Franklin", sans-serif;
+  height: 35.5px;
+  width: 100%;
+  border-width: 1px solid rgb(98, 136, 165);
+  border-radius: 5px;
+}
+
 
 /* more section css */
-#more-container{
+#more-container {
   display: flex;
   margin: 0 auto;
-  margin-top:50px;
+  margin-top: 50px;
   width: 90%;
 }
 
@@ -337,15 +479,15 @@ iframe {
   padding-right: 30px;
 }
 
-#more-h2{
+#more-h2 {
   display: none;
   position: relative;
   left: 215px;
   font-size: 1rem;
-    font-weight: 700;
-    font-family: 'Domine', serif;
-    color: #000;
-    padding: 15px;
+  font-weight: 700;
+  font-family: "Domine", serif;
+  color: #000;
+  padding: 15px;
 }
 
 .more-img {
@@ -367,36 +509,38 @@ iframe {
 .more-date {
   color: #999;
   font-size: 12px;
-  font-family: 'Domine', serif;
-  padding-top:20px;
-}
-.more-title {
-  padding-top:20px;
-  font-size: 18px;
-  font-family: 'Domine', serif;
-  line-height: 22p
+  font-family: "Domine", serif;
+  padding-top: 20px;
 }
 
-#most-popular{
+.more-title {
+  padding-top: 20px;
+  font-size: 18px;
+  font-family: "Domine", serif;
+  line-height: 22p;
+}
+
+#most-popular {
   border-top: 1px solid #000;
   width: 310px;
 }
 
-#most-popular h2{
+#most-popular h2 {
   font-size: 1rem;
-    font-weight: 700;
-    font-family: 'Domine', serif;
-    color:#000;
-    padding: 15px;
+  font-weight: 700;
+  font-family: "Domine", serif;
+  color: #000;
+  padding: 15px;
 }
 
-.most-popular-text{
+.most-popular-text {
   border-bottom: 1px solid rgb(226, 226, 226);
-    padding: 15px 0px;
-    font-family: 'Domine', serif;
-    color: rgb(18, 18, 18);
-    font-weight: 500
+  padding: 15px 0px;
+  font-family: "Domine", serif;
+  color: rgb(18, 18, 18);
+  font-weight: 500;
 }
+
 
 
 /* footer css */
@@ -411,11 +555,11 @@ footer {
   padding-top: 20px;
 }
 
-.footer-section h3{
+.footer-section h3 {
   color: rgb(51, 51, 51);
   font-size: 13px;
   font-weight: 700;
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
   height: 25px;
   line-height: 15px;
   text-transform: uppercase;
@@ -423,10 +567,10 @@ footer {
   margin: 0px;
 }
 
-.footer-section ul li a{
+.footer-section ul li a {
   color: rgb(0, 0, 0);
   display: inline-block;
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
   text-transform: capitalize;
   width: 150px;
   font-size: 14px;
@@ -436,7 +580,7 @@ footer {
   text-decoration: none;
 }
 
-#footer-line{
+#footer-line {
   content: "";
   display: block;
   height: 1px;
@@ -445,16 +589,15 @@ footer {
   border-top: 2px solid rgb(226, 226, 226);
 }
 
-
-#footer-nav ul{
+#footer-nav ul {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
 }
 
-#footer-nav ul a{
+#footer-nav ul a {
   color: rgb(153, 153, 153);
   font-size: 12px;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
