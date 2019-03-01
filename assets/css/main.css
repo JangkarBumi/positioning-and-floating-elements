@@ -400,10 +400,10 @@ iframe {
 
 .side-bar-section {
   width: 100%;
-  min-height: 200px;
+  min-height: 450px;
   font-family: 'Work Sans', sans-serif;
   font-weight: bold;
-  margin-top: 70%;
+  margin-top: 20px;
 }
 
 #editor-picks p {
